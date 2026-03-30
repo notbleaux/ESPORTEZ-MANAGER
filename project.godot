@@ -1,0 +1,42 @@
+; Engine Configuration File.
+; Godot version: 4.x
+; Project: ESPORTEZ-MANAGER
+
+[application]
+config/name="ESPORTEZ-MANAGER"
+config/description="A comprehensive eSports platform combining Godot Engine simulation with Python API services for tournament management."
+config/version="1.0.0"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
+run/main_scene="res://scenes/Main.tscn"
+config/use_custom_user_dir=false
+
+[autoload]
+RotasIntegration="*res://scripts/RotasIntegration.gd"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/resizable=true
+window/stretch/mode="canvas_items"
+
+[dotnet]
+project/assembly_name="ESPORTEZ-MANAGER"
+
+[physics]
+common/physics_ticks_per_second=60
+
+[rendering]
+renderer/rendering_method="forward_plus"
+
+[application/config]
+online_mode=false
+
+[layer_names]
+3d_physics/layer_1="World"
+3d_physics/layer_2="Agents"
+3d_physics/layer_3="Projectiles"
+
+[debug]
+gdscript/warnings/unused_variable=0
+gdscript/warnings/unused_parameter=0
